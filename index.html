@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>DMC Software</title>
+</head>
+
+<body>
+  <!-- Sección en español -->
+  <div id="spanish-section">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/pictures/Logoespada.png" alt="Logo Devs May Cry" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" onclick="closeMenu()">Inicio</a></li>
+          <li><a href="#about" onclick="closeMenu()">Sobre Nosotros</a></li>
+          <li><a href="#projects" onclick="closeMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contacto</a></li>
+          <li><button class="lang-button" onclick="switchLanguage()">English</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="home" class="section reverse">
+        <div class="text">
+          <h1>Bienvenido a<br>Devs May Cry</h1>
+          <p>¿Necesitas desarrollar un sistema para tu emprendimiento?</p>
+          <p>¿Estás buscando mejorar y agilizar un sistema ya existente?</p>
+          <p>¿Tenés una idea para desarrollar un juego?</p>
+          <p><strong>¡Somos justo lo que necesitás!</strong></p>
+        </div>
+        <div class="image">
+          <img src="img/pictures/Logo.png" alt="home" id="logobienvenido" />
+        </div>
+      </section>
+
+      <!-- Sobre nosotros -->
+      <section id="about" class="section">
+        <div style="width: 100%;">
+          <h2 class="about-title">Nuestro Equipo</h2>
+          <div class="team-members">
+            <!-- Yamil -->
+            <div class="member">
+              <img src="img/pictures/EliminateMTG.jpg" alt="Yamil Nicolas Ruffa">
+              <div class="member-info">
+                <h1>Yamil Nicolas Ruffa</h1>
+                <p>Diseño, Base de datos y backend.</p>
+                <div class="tecnologias">
+                  <img src="img/icons/php/synfonylogo.png" alt="Symfony" title="php/Symfony" />
+                  <img src="img/icons/bd/icons8-mysql-240.png" alt="mysql" title="MySql" />
+                  <img src="img/icons/java/icons8-spring-boot-240.png" alt="Spring Boot" title="Java/Spring Boot" />
+                  <img src="img/icons/java/Angular.png" alt="angular" title="Angular" />
+                  <img src="img/icons/python/icons8-python-200.png" alt="flask" title="python/flask" />
+                  <img src="img/icons/react/icons8-react-200.png" alt="react" title="React" />
+                  <img src="img/icons/android/AndroidStudio.png" alt="AndroidStudio" title="Android Studio" />
+                  </div>
+                <div class="redes">
+                  <a href="https://github.com/yamil" target="_blank">
+                    <img src="img/icons/git/icons8-github-100.png" alt="GitHub" title="GitHub" />
+                    </a>
+                    <a href="https://linkedin.com/in/yamil" target="_blank">
+                    <img src="img/icons/linkedin/icons8-linkedin-200.png" alt="LinkedIn" title="LinkedIn" />
+                    </a>
+                    <a href="#" target="_blank">
+                    <img src="img/icons/linkedin/icons8-web-100.png" alt="cv" title="Portfolio" />
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+
+            <!-- Facundo -->
+            <div class="member">
+              <img src="img/pictures/FotoFacundo.png" alt="Facundo Garnica">
+              <div class="member-info">
+                <h1>Facundo Garnica</h1>
+                <p>Desarrollador Fullstack.</p>
+                <div class="tecnologias">
+                  <img src="img/icons/php/icons8-php-100.png" alt="PHP" title="php/Symfony" />
+                  <img src="img/icons/bd/icons8-database-100.png" alt="Database" title="MySql" />
+                  <img src="img/icons/java/icons8-java-200.png" alt="Java" title="Java/Spring Boot" />
+                  <img src="img/icons/python/icons8-python-200.png" alt="Python" title="Flask" />
+                  <img src="img/icons/react/icons8-react-200.png" alt="React" title="React" />
+                  <img src="img/icons/android/icons8-android-200.png" alt="Android" title="Android Studio" />
+                  </div>
+                <div class="redes">
+                  <a href="https://github.com/garkarotto" target="_blank">
+                    <img src="img/icons/git/icons8-github-100.png" alt="GitHub" title="GitHub" />
+                  </a>
+                    <a href="https://www.linkedin.com/in/facundo-garnica-643311311/" target="_blank">
+                      <img src="img/icons/linkedin/icons8-linkedin-200.png" alt="LinkedIn" title="LinkedIn" />
+                    </a>
+                    </div>
+                    </div>
+                    </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="projects" class="section reverse">
+        <div class="projects-header">
+          <h2>Nuestros Proyectos</h2>
+          <p>Conocé algunos de los sistemas que hemos desarrollado</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/PlaceholderLC.png" alt="Sistema de Recetas">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema de Recetas Online</h3>
+              <p>Plataforma web completa para gestionar y compartir recetas de cocina. Incluye búsqueda avanzada,
+                sistema de
+                calificaciones y favoritos.</p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto1.html" target="_blank" class="project-link">Ver mas</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/codegames_top_score.png" alt="Portfolio">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Página de Juego Indie</h3>
+              <p>Página creada para un videojuego indie, diseñada para captar la atención desde el primer vistazo.
+                Animaciones suaves, secciones dinámicas y diseño optimizado para PC.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto2.html" target="_blank" class="project-link">Ver mas</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/sugist_vista__inicial.png" alt="Sistema Gestión Estudiantil">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema de Gestión Estudiantil</h3>
+              <p>Sistema completo para institutos terciarios que permite gestionar alumnos, profesores, materias,
+                calificaciones
+                y
+                asistencias.</p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto3.html" target="_blank" class="project-link">Ver mas</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/Mercado-Mago.png" alt="App Móvil">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Mercado Mago – E-commerce Platform</h3>
+              <p>Plataforma web inspirada en grandes marketplaces en línea,
+                diseñada para comprar y vender productos de manera intuitiva y escalable.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Angular 17</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">MySql</span>
+                <span class="tech-tag">API REST</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto4.html" target="_blank" class="project-link">Ver mas</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/sistema_carne_ventas.png" alt="App Móvil">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Sistema de gestión de carnicería</h3>
+              <p>Sistema comercial para carnicerías que permite gestionar productos por peso y categoría, controlar
+                stock,
+                realizar ventas, administrar
+                clientes y consultar transferencias mediante integración con MercadoPago.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Netbeans</span>
+                <span class="tech-tag">Java 17</span>
+                <span class="tech-tag">Java FX</span>
+                <span class="tech-tag">MySql</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto5.html" target="_blank" class="project-link">Ver mas</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contact" class="section contact">
+        <h2>Contactanos</h2>
+        <p style="margin-bottom: 2rem;">¿Tenés un proyecto en mente? ¡Hablemos!</p>
+
+        <form name="contact-es" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Campo oculto requerido por Netlify -->
+          <input type="hidden" name="form-name" value="contact-es">
+
+          <!-- Honeypot anti-spam -->
+          <p style="display:none;">
+            <label>No completar este campo: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="mensaje" required></textarea>
+          </div>
+          
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p><strong>Devs May Cry</strong> - Desarrollo de Software Profesional</p>
+        <p>© 2025 Devs May Cry. Todos los derechos reservados.</p>
+        <p>📧 devsmaycry.team@gmail.com</p>
+        <div class="footer-social">
+          <a href="https://github.com/devsmaycry-team" target="_blank" title="GitHub">GitHub</a>
+          <!-- <a href="https://linkedin.com/in/yamil" target="_blank" title="LinkedIn">LinkedIn</a> -->
+          <a href="#contact" title="Contacto">Contacto</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Sección en inglés -->
+  <!-- English section -->
+  <div id="english-section" style="display:none;">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/pictures/Logoespada.png" alt="Devs May Cry Logo" />
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="nav-links-en">
+          <li><a href="#home-en" onclick="closeMenu()">Home</a></li>
+          <li><a href="#about-en" onclick="closeMenu()">About Us</a></li>
+          <li><a href="#projects-en" onclick="closeMenu()">Projects</a></li>
+          <li><a href="#contact-en" onclick="closeMenu()">Contact</a></li>
+          <li><button class="lang-button" onclick="switchLanguage()">Español</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="home-en" class="section reverse">
+        <div class="text">
+          <h1>Welcome to<br>Devs May Cry</h1>
+          <p>Do you need a custom system for your business?</p>
+          <p>Are you looking to improve or optimize an existing system?</p>
+          <p>Do you have an idea for a videogame?</p>
+          <p><strong>We are exactly what you need!</strong></p>
+        </div>
+        <div class="image">
+          <img src="img/pictures/Logo.png" alt="home" id="logobienvenido" />
+        </div>
+      </section>
+
+      <!-- About us -->
+      <section id="about-en" class="section">
+        <div style="width:100%;">
+          <h2 class="about-title">Our Team</h2>
+          <div class="team-members">
+
+<!-- Yamil -->
+<div class="member" id="yamil">
+  <img src="img/pictures/EliminateMTG.jpg" alt="Foto de perfil - Backend y Bases de Datos">
+
+  <div class="member-info">
+    <h1>Yamil Nicolas Ruffa</h1>
+    <p>Design, Databases and Backend.</p>
+    <!-- Tecnologías -->
+    <div class="tecnologias">
+      <img src="img/icons/php/synfonylogo.png" alt="Symfony" title="PHP / Symfony">
+      <img src="img/icons/bd/icons8-mysql-240.png" alt="MySQL" title="MySQL">
+      <img src="img/icons/java/icons8-spring-boot-240.png" alt="Spring Boot" title="Java / Spring Boot">
+      <img src="img/icons/java/Angular.png" alt="Angular" title="Angular">
+      <img src="img/icons/python/icons8-python-200.png" alt="Flask" title="Python / Flask">
+      <img src="img/icons/react/icons8-react-200.png" alt="React" title="React">
+      <img src="img/icons/android/AndroidStudio.png" alt="Android Studio" title="Android Studio">
+      </div>
+    <!-- Redes -->
+    <div class="redes">
+      <a href="https://github.com/yamil" target="_blank" aria-label="GitHub">
+        <img src="img/icons/git/icons8-github-100.png" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/yamil" target="_blank" aria-label="LinkedIn">
+        <img src="img/icons/linkedin/icons8-linkedin-200.png" alt="LinkedIn">
+      </a>
+      
+      <a href="#" target="_blank" aria-label="Portfolio personal">
+        <img src="img/icons/linkedin/icons8-web-100.png" alt="Portfolio">
+      </a>
+      </div>
+      </div>
+      </div>
+  </div>
+
+          <!-- Facundo -->
+          <div class="member" id="facundo">
+            <img src="img/pictures/FotoFacundo.png" alt="Foto de perfil - Desarrollador Fullstack">
+
+            <div class="member-info">
+              <h1>Facundo Garnica</h1>
+              <p>Fullstack Developer.</p>
+
+              <!-- Tecnologías -->
+              <div class="tecnologias">
+                <img src="img/icons/php/icons8-php-100.png" alt="PHP" title="PHP">
+                <img src="img/icons/bd/icons8-database-100.png" alt="Database" title="Bases de datos">
+                <img src="img/icons/java/icons8-java-200.png" alt="Java" title="Java">
+                <img src="img/icons/python/icons8-python-200.png" alt="Python" title="Python">
+                <img src="img/icons/react/icons8-react-200.png" alt="React" title="React">
+                <img src="img/icons/android/icons8-android-200.png" alt="Android" title="Android">
+              </div>
+
+              <!-- Redes -->
+              <div class="redes">
+                <a href="https://github.com/garkarotto" target="_blank" aria-label="GitHub">
+                  <img src="img/icons/git/icons8-github-100.png" alt="GitHub">
+                </a>
+                  <a href="https://www.linkedin.com/in/facundo-garnica-643311311/" target="_blank" aria-label="LinkedIn">
+                    <img src="img/icons/linkedin/icons8-linkedin-200.png" alt="LinkedIn">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          </section>
+          <!-- Projects -->
+          <section id="projects-en" class="section reverse">
+            <div class="projects-header">
+              <h2>Our Projects</h2>
+              <p>Discover some of the systems we have developed</p>
+            </div>
+            <div class="projects-grid">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="img/pictures/PlaceholderLC.png" alt="Recipe System">
+                  <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                  <h3>Online Recipe System</h3>
+                  <p>Complete web platform to manage and share cooking recipes. Includes advanced search, rating system and
+                    favorites.</p>
+                  <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Javascript</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="proyecto1.html" target="_blank" class="project-link">View more</a>
+                    <a href="#contact" class="project-link secondary">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="img/pictures/codegames_top_score.png" alt="Página Juego Indie">
+                  <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                  <h3>Indie Game Page</h3>
+
+              <p>
+                Page created for an indie video game, designed to capture attention from the very first glance.
+                Smooth animations, dynamic sections, and a layout optimized for PC.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Javascript</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto2.html" target="_blank" class="project-link">View more</a>
+                <a href="#contact" class="project-link secondary">Consultanos</a>
+              </div>
+              </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="img/pictures/sugist_vista__inicial.png" alt="Student Management System">
+                  <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                  <h3>Student Management System</h3>
+                  <p>Complete system for institutes to manage students, teachers, subjects, grades and attendance.</p>
+                  <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Javascript</span>
+              </div>
+
+              <div class="project-links">
+                <a href="proyecto3.html" target="_blank" class="project-link">View more</a>
+                <a href="#contact" class="project-link secondary">Contact Us</a>
+              </div>
+              </div>
+              </div>
+              <!-- Project 4 -->
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="img/pictures/Mercado-Mago.png" alt="Mercado Mago">
+                  <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                  <h3>Mercado Mago – E-commerce Platform</h3>
+                  <p>
+                    Web platform inspired by large online marketplaces, designed for buying and selling products
+                    in an intuitive and scalable way.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Angular 17</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">MySql</span>
+              </div>
+
+              <div class="project-links">
+                <a href="proyecto4.html" target="_blank" class="project-link">View more</a>
+                <a href="#contact" class="project-link secondary">Contact Us</a>
+              </div>
+              </div>
+              </div>
+
+          <!-- Proyecto 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="img/pictures/sistema_carne_ventas.png" alt="App Móvil">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3>Butcher Shop Management System</h3>
+              <p>Commercial system for butcher shops that allows managing products by weight and category, controlling
+                stock,
+                processing sales, managing customers, and checking transfers through MercadoPago integration.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Netbeans</span>
+                <span class="tech-tag">Java 17</span>
+                <span class="tech-tag">Java FX</span>
+                <span class="tech-tag">MySql</span>
+              </div>
+              <div class="project-links">
+                <a href="proyecto5.html" target="_blank" class="project-link">View more</a>
+                <a href="#contact" class="project-link secondary">Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact-en" class="section contact">
+        <h2>Contact Us</h2>
+        <p style="margin-bottom:2rem;">Have a project in mind? Let's talk!</p>
+      
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <!-- Campo oculto requerido por Netlify -->
+          <input type="hidden" name="form-name" value="contact">
+      
+          <!-- Honeypot anti-spam -->
+          <p style="display:none;">
+            <label>Don’t fill this out: <input name="bot-field"></label>
+          </p>
+      
+          <div class="form-group">
+            <label for="name-en">Name:</label>
+            <input type="text" id="name-en" name="name" required>
+          </div>
+
+    <div class="form-group">
+      <label for="email-en">Email:</label>
+      <input type="email" id="email-en" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message-en">Message:</label>
+      <textarea id="message-en" name="message" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+    </form>
+    </section>
+
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p><strong>Devs May Cry</strong> – Professional Software Development</p>
+        <p>© 2026 Devs May Cry. All rights reserved.</p>
+        <p>📧 devsmaycry.team@gmail.com</p>
+        <div class="footer-social">
+          <a href="https://github.com/yamil" target="_blank" title="GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/yamil" target="_blank" title="LinkedIn">LinkedIn</a>
+          <a href="#contact-en" title="Contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    function closeMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.remove('active');
+    }
+
+
+    function switchLanguage() {
+      const spanishSection = document.getElementById('spanish-section');
+      const englishSection = document.getElementById('english-section');
+
+      const spanishDisplay = window.getComputedStyle(spanishSection).display;
+
+      if (spanishDisplay === 'none') {
+        spanishSection.style.display = 'block';
+        englishSection.style.display = 'none';
+      } else {
+        spanishSection.style.display = 'none';
+        englishSection.style.display = 'block';
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
