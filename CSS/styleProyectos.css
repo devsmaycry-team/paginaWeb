@@ -417,3 +417,15 @@
 .icon-recibo {
   background-image: url("../img/icons/iconos-personalizados/recibo.png");
 }
+
+.icon-favorito {
+  background-image: url("../img/icons/iconos-personalizados/favorito.png");
+}
+
+.icon-buscar {
+  background-image: url("../img/icons/iconos-personalizados/buscar.png");
+}
+
+.icon-enviando {
+  background-image: url("../img/icons/iconos-personalizados/enviando.png");
+}
