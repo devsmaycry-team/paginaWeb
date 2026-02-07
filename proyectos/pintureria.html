@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sistema de Gestión de Recetas de cocina</title>
-  <link rel="stylesheet" href="CSS/styleProyectos.css" />
+  <title>Sistema de Gestión de Stock para Pinturería</title>
+  <link rel="stylesheet" href="../CSS/styleProyectos.css" />
 </head>
 <body>
 
   <!-- Botón volver -->
-  <a href="index.html" class="back-button">← Volver al Portfolio</a>
+  <a href="#" class="back-button" onclick="window.close(); return false;">← Pagina Principal</a>
 
   <!-- ================= HERO SECTION ================= -->
   <section class="hero">
-    <h1>Sistema de Gestión de Recetas de cocina</h1>
+    <h1>Sistema de Gestión de Stock para Pinturería</h1>
     <p class="subtitle">
     </p>
 
     <!-- Tecnologías utilizadas -->
     <div class="hero-tech">
-      <span class="tech-tag">Symfony 5.4</span>
+      <span class="tech-tag">flask v3.1</span>
       <span class="tech-tag">MySQL</span>
-      <span class="tech-tag">HTML, CSS y JavaScript</span>
+      <span class="tech-tag">react v19</span>
     </div>
   </section>
 
@@ -32,8 +32,10 @@
       <h2>Descripción General</h2>
 
       <p>
-        Sistema de recetas de cocina en línea que permite a los visitantes, estén registrados o no, visualizar recetas.
-      Los usuarios registrados pueden subir y editar sus propias recetas, así como calificar las recetas de otros usuarios.
+        Los usuarios pueden ingresar a la pagina,
+        simular compras para crear un presupuesto que es enviado a la pintureria para su aprobacion.
+        El sistema tiene usuarios empleados,encargados y clientes, todos gestionados por un admin.
+        Se pueden dar de alta, baja y modificar productos, categorias y usuarios.
       </p>
 
     </section>
@@ -47,7 +49,7 @@
         <div class="module-header">
           <div class="module-icon">1</div>
           <div class="module-title">
-            <h3>Registro e inicio de sesión de usuarios</h3>
+            <h3>Alta baja y modificacion de usuarios</h3>
           </div>
         </div>
 
@@ -62,7 +64,7 @@
 
           <div class="module-image">
             <!-- Imagen ilustrativa del módulo -->
-            <img src="img/pictures/pro_recetas/img5.jpg" alt="Imagen del módulo">
+            <img src="../img/pictures/pintureria/img6.jpg" alt="Imagen del módulo">
           </div>
         </div>
       </div>
@@ -72,21 +74,20 @@
       <div class="module-header">
         <div class="module-icon">2</div>
         <div class="module-title">
-          <h3>Creación, edición y publicación de recetas</h3>
+          <h3>ABM de productos</h3>
         </div>
       </div>
 
       <div class="module-content">
         <div class="module-image">
-          <img src="img/pictures/pro_recetas/img12.jpg" alt="Módulo de Autenticación">
+          <img src="../img/pictures/pintureria/img3.jpg" alt="Módulo de Autenticación">
         </div>
 
         <div class="module-description">
           <p>Sistema completo para gestionar las recetas que suben los usuarios:</p>
           <ul>
-            <li>Creacion, edicion y eliminacion de recetas</li>
-            <li>Creacion, edicion y eliminacion de pasos</li>
-            <li>controlar la visibilidad de las recetas</li>
+            <li>Creacion, edicion y eliminacion de productos</li>
+            <li>Seleccion de categorias y subcategforias para los mismos</li>
           </ul>
         </div>
       </div>
@@ -97,20 +98,20 @@
       <div class="module-header">
         <div class="module-icon">2</div>
         <div class="module-title">
-          <h3>Sistema de favoritos y puntuación</h3>
+          <h3>Generacion de presupuesto en base al carrito de compra</h3>
         </div>
       </div>
 
       <div class="module-content">
         <div class="module-image">
-          <img src="img/pictures/pro_recetas/img15.jpg" alt="Módulo de Autenticación">
+          <img src="../img/pictures/pintureria/img7.jpg" alt="Módulo de Autenticación">
         </div>
 
         <div class="module-description">
-          <p>Sistema complementario de puntuacion y guardado de favoritos:</p>
+          <p>Home Page</p>
           <ul>
-            <li>Se agregar recetas a la listad e favoritos</li>
-            <li>Se puede puntuar recetas de otros usuarios</li>
+            <li>Filtrado por nombres o categorias/subcategorias</sub></li>
+            <li>Generacion y envio de presupuesto por correo electronico</li>
           </ul>
         </div>
       </div>
@@ -135,14 +136,14 @@
         <div class="feature-card">
           <div class="feature-icon icon-user"></div>
           <h3>Multiusuario</h3>
-          <p>Perfiles separados para administrador y usuarios registrados.</p>
+          <p>Perfiles separados para administración, usuarios clientes y usuarios empleados.</p>
         </div>
 
         <!-- Feature 3 -->
         <div class="feature-card">
-          <div class="feature-icon icon-favorito"></div>
-          <h3>Sistema de favoritos</h3>
-          <p>crea atajos para facil a acceso.</p>
+          <div class="feature-icon icon-enviando"></div>
+          <h3>Envio automatico de presupuesto</h3>
+          <p>Generacion de pdf en base al carrito de compra para la aprobacion del presupuesto.</p>
         </div>
 
       </div>
